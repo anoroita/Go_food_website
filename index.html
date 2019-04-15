@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home | Anele Go Food </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/header.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/body.css" rel="stylesheet" type="text/css" media="screen">
+    <script type="text/javascript" src="script/home.js"></script>
+</head>
+<body onload="drawDivider()">
+    <img src="images/logo2.png" width="20%">
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="latest.html">Latest</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+    </ul>
+    <div class="content">
+        <div class="banner">
+            <img src="images/banner.png" width="1020px">
+        </div>
+        <div class="centered"><h1>Get your taste BUDS busy...</h1></div>
+            <canvas id="canvas" height="50px" width="1030px"></canvas>
+            <div id="thumbnails">
+                <figure>
+                        <img class="tiles" src="images/thumb1.jpeg">
+                        <img class="tiles" src="images/thumb2.png">
+                        <img class="tiles" src="images/thumb3.jpeg">
+                </figure>
+                <figcaption class="figcap"><h2>Latest Blog Posts</h2></figcaption>
+            </div>
+            <svg width="1200" height="20">
+                    <rect width="1030" height="20" style="fill:rgb(139,69,19)"/>
+            </svg>
+                <figure>
+                        <video class="videos" width="250" src="videos/Homemade Onion Rings - Super Crispy Easy and Delicious.mp4" height="250"  autoplay="autoplay" controls="controls" loop="loop"></video>
+                        <video class="videos" width="250" src="videos/How To Master 5 Basic Cooking Skills - Gordon Ramsay.mp4" height="250"  autoplay="autoplay" controls="controls" loop="loop"></video>
+                        <video class="videos" width="250" src="videos/The Crispiest Onion Rings - Kitchen Conundrums with Thomas Joseph.mp4" height="250" autoplay="autoplay" controls="controls" loop="loop"></video>
+                </figure>
+    </div>
+</body>
+</html>
