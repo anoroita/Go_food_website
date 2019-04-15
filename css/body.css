@@ -1,0 +1,44 @@
+.content{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.centered {
+    position: absolute;
+    font-style: italic;
+    text-shadow: dimgrey;
+    font-size: 40px;
+    color: azure;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body{
+    background-color: beige;
+}
+
+.tiles{
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+}
+
+#thumbnails{
+    margin-left: 
+}
+
+.figcap{
+    position: relative;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.videos{
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    float: left;
+}
