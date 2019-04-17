@@ -37,8 +37,66 @@ body{
 }
 
 .videos{
-    width: 250px;
+    width: 350px;
     height: 250px;
-    padding: 20px;
+    padding: 10px;
     float: left;
 }
+
+aside.sticky{
+    float: right;
+    position: relative, webkit-sticky;
+    margin-top: 60px;
+    width: 30%;
+    height: 1300px;
+    background-color: chocolate;
+}
+
+aside h2{
+    margin-left: 10px;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: darkred;
+    padding: 25px;
+    font-size: 20px;
+}
+
+aside iframe{
+    padding: 10px;
+}
+
+article{
+  font-family: 'Montserrat', sans-serif;
+}
+
+table{
+    width: 100%;
+}
+
+table caption{
+    background-color: gray;
+    color: aliceblue;
+}
+
+table colgroup{
+    background-color: chocolate;
+}
+
+.column{
+    float: left;
+    width: 200px;
+    padding: 10px;
+}
+
+.block_section{
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+

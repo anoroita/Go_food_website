@@ -5,10 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home | contacts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
-</head>
-<body>
+    <link href="css/flexbox.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/header.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/body.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/html5_nav.css" rel="stylesheet" type="text/css" media="screen">
+    <script type="text/javascript" src="script/contact.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     
+    <!--BEGIN : Bootstrap References-->
+    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <!--END : Bootstrap References-->
+</head>
+<body onload="CheckUserLocation()">
+        <header>
+                <img src="images/logo2.png" width="20%">
+                <nav>
+                        <a href="index.html">Home</a>
+                        <a href="latest.html">Latest</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="about.html">About</a>
+                        <a class="active"  href="contact.html">Contacts</a>
+                </nav>
+        </header>
+        <article class="container">
+                <header><h1>Keep yourself Updated</h1></header>
+                <div class="row">
+                <section class="col-md-6">      
+                <form method="POST" action="/action.php">
+                                        <div class="panel panel-default">
+                                                <label for="fname">First Name</label>
+                                                <input type="text" class="form-control" id="fname" name="firstname" placeholder="Your name.." required>
+                                        
+                                                <label for="lname">Last Name</label>
+                                                <input type="text" class="form-control" id="lname" name="lastname" placeholder="Your last name.." required>
+
+                                                <label for="email">Email Address</label>
+                                                <input type="email" class="form-control" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Your Email address.." required>
+
+                                                <label for="number">Contact No</label>
+                                                <input type="number" class="form-control" id="number" name="number" placeholder="Your contact number.." required>
+                                        
+                                                <input onclick="validate()" class="btn btn-success" type="button" value="Submit">
+                                                <input type="reset" class="btn btn-danger" value="reset">
+                                                <p><div id="message"></div></p>
+                        </form>
+                </section>  
+                <section class="col-md-6"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.765130928986!2d28.021879715441337!3d-26.041239763693106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9573f7495315bd%3A0x9d1b2bd1ad71290b!2sBritehouse!5e0!3m2!1sen!2sza!4v1555495289628!5m2!1sen!2sza" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></section>
+        </div>
+        </article>
 </body>
 </html>
