@@ -100,3 +100,30 @@ table colgroup{
     padding: 10px;
 }
 
+.rotate:hover{
+    transform: rotate(270deg);
+}
+
+.skew:hover{
+    transform: skew(90deg);
+}
+
+.scale:hover{
+    transform: scale(4,5);
+}
+
+.translate:hover{
+    transform: translate(100px,50px);
+}
+
+.rounded {
+    border-radius: 25px;
+    background: rgb(33, 164, 173);
+    padding: 20px; 
+    width: 200px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    box-shadow: 10px 10px 5px grey;
+    transition: transform 2s;
+  }
